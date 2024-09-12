@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza el archivo de estilos CSS -->
+</head>
+<body>
+    <!-- Encabezado con el logo y menú de navegación -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo de Max"> <!-- Logo de la página -->
+        </div>
+        <div class="menu">
+            <a href="#" class="login">Ingresar</a> <!-- Enlace para ingresar -->
+            <button class="subscribe">Suscríbete ahora</button> <!-- Botón de suscripción -->
+        </div>
+    </header>
+    
+    <!-- Sección principal con mensaje de bienvenida y llamada a la acción -->
+    <section>
+        <div class="centered-content">
+            <img src="img/logocentro.png" alt="Logo de Max" class="logo">
+            <h1 class="title">MUCHO MÁS QUE VER</h1>
+            <h2>Los planes empiezan desde $3.990 / mes</h2>
+            <button class="subscribe">SUSCRÍBETE AHORA</button> <!-- Botón de suscripción -->
+        </div>
+    </section>
+
+    <!-- Sección de planes de suscripción con opciones de mensual y anual -->
+    <section>            
+        <div class="smiley-container"></div>
+        <div class="section">
+            <h1>ELIGE EL MEJOR PLAN PARA TI</h1>    
+            <div class="tabs">
+                <!-- Tabs para seleccionar entre planes mensuales y anuales -->
+                <input type="radio" id="tab-monthly" name="plan-periods" aria-label="Planes Mensuales" autocomplete="off" checked>
+                <label class="tab" for="tab-monthly">MENSUAL</label>
+                <input type="radio" id="tab-yearly" name="plan-periods" aria-label="Planes Anuales" autocomplete="off">
+                <label class="tab" for="tab-yearly">ANUAL</label>
+                <span class="tab-active-bg"></span>
+            </div>
+        </div>  
+
+        <!-- Contenedores de los planes -->
+        <div class="plans-container">
+            <div class="plan">
+                <h3>Básico con Anuncios</h3>
+                <ul>
+                    <li><strong>2 dispositivos</strong> a la vez</li>
+                    <li>Resolución <strong>Full HD</strong></li>
+                </ul>
+                <h4>$3.990<em>/mes</em></h4>
+                <a href="https://auth.max.com/product?route=ad-lite-monthly" class="btn">Elige este plan</a>
+            </div>
+            
+            <div class="plan">
+                <h3>Estándar</h3>
+                <ul>
+                    <li><strong>2 dispositivos</strong> a la vez</li>
+                    <li>Resolución <strong>Full HD</strong></li>
+                    <li><strong>30 descargas</strong> para disfrutar offline</li>
+                </ul>
+                <h4>$4.990<em>/mes</em></h4>
+                <a href="https://auth.max.com/product?route=ad-free-monthly" class="btn">Elige este plan</a>
+            </div>
+            
+            <div class="plan">
+                <h3>Platino</h3>
+                <ul>
+                    <li><strong>4 dispositivos</strong> a la vez</li>
+                    <li>Resolución <strong>4K Ultra HD*</strong></li>
+                    <li>Audio <strong>Dolby Atmos*</strong></li>
+                    <li><strong>100 descargas</strong> para disfrutar offline</li>
+                </ul>
+                <h4>$5.990<em>/mes</em></h4>
+                <a href="https://auth.max.com/product?route=ultimate-monthly" class="btn">Elige este plan</a>
+            </div>
+        </div>
+
+        <!-- Información adicional sobre los planes -->
+        <div class="plan-info">
+            <p>*Full HD, 4K Ultra HD y Dolby Atmos no están disponibles en todo el contenido de cada plan. El contenido en vivo en los planes Estándar y Platino puede contener publicidad. Las descargas pueden estar limitadas de acuerdo con el tipo de contenido. Para más información, visita <a href="https://help.max.com/plans" target="_blank">help.max.com/plans</a>. Requiere pago anticipado. Ahorro basado en un plan anual vs. su versión mensual si es pagado por 12 meses.</p>
+        </div>
+    </section>
+
+    <!-- Sección destacada con texto promocional -->
+    <section class="extra-content">
+        <p>En Max tienes mucho más que ver. Si te gusta el drama, la comedia, los realities y un poco de todo, este es tu lugar.</p>
+    </section>
+
+    <!-- Contenedor para los géneros con imágenes de fondo -->
+    <div class="scroll-container">
+        <div class="genre" style="background-image: url('img/family.png');">
+            <h4>NIÑOS Y FAMILIA</h4>
+            <p>PEPPA PIG</p>
+        </div>
+        <div class="genre" style="background-image: url('img/reality.jpg');">
+            <h4>REALITY</h4>
+            <p>TODO EN 90 DÍAS</p>
+        </div>
+        <div class="genre" style="background-image: url('img/novelas.jpg');">
+            <h4>NOVELAS</h4>
+            <p>¿SERÁ QUE ES AMOR?</p>
+        </div>
+        <div class="genre" style="background-image: url('img/movies.jpg');">
+            <h4>CINE</h4>
+            <p>GODZILLA VS KONG</p>
+        </div>
+        <div class="genre" style="background-image: url('img/drama.jpg');">
+            <h4>DRAMA</h4>
+            <p>JUEGO DE TRONOS</p>
+        </div>
+        <div class="genre" style="background-image: url('img/action.jpg');">
+            <h4>ACCIÓN</h4>
+            <p>THE LAST OF US</p>
+        </div>
+        <div class="genre" style="background-image: url('img/comedy.jpg');">
+            <h4>COMEDIA</h4>
+            <p>THE BIG BANG THEORY</p>
+        </div>
+        <div class="genre" style="background-image: url('img/documentary.jpg');">
+            <h4>DOCUMENTALES</h4>
+            <p>EL LADO OSCURO DE LA FAMA INFANTIL</p>
+        </div>
+    </div>
+
+    <!-- Sección de estrenos con imágenes destacadas -->
+    <section class="featured-releases">
+        <h2>Estrenos de los que no pararás de hablar.</h2>
+        <div class="image-grid">
+            <div class="image-item"><img src="img/imagen1.jpg" alt="Descripción 1"></div>
+            <div class="image-item"><img src="img/imagen2.jpg" alt="Descripción 2"></div>
+            <div class="image-item"><img src="img/imagen3.jpg" alt="Descripción 3"></div>
+            <div class="image-item"><img src="img/imagen4.jpg" alt="Descripción 4"></div>
+            <div class="image-item"><img src="img/imagen5.jpg" alt="Descripción 5"></div>
+            <div class="image-item"><img src="img/imagen6.jpg" alt="Descripción 6"></div>
+        </div>
+        <a id="subscribe-button" class="subscribe-button" href="https://auth.max.com/product" target="_top" role="button" rel="noopener">SUSCRÍBETE AHORA</a>
+    </section>
+        
+</body>
+</html>
